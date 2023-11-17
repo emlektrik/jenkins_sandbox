@@ -9,8 +9,9 @@ pipeline {
     stage('set up env') {
       steps {
         script {
-          test_var = "haha"
+          def test_var = "haha"
         }
+
         ws(dir: 'scm') {
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
           sh '''ls -lah;
