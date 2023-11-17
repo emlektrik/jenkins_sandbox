@@ -1,3 +1,4 @@
+def test_var = 'test var'
 pipeline {
   agent {
     node {
@@ -7,7 +8,6 @@ pipeline {
   }
   stages {
     stage('set up env') {
-      def test_var = 'test var'
       steps {
         ws(dir: 'scm') {
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
