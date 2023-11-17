@@ -9,7 +9,7 @@ pipeline {
     stage('set up env') {
       steps {
         script {
-          def test_var = "haha"
+          test_var = "haha"
         }
 
         ws(dir: 'scm') {
