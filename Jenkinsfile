@@ -1,4 +1,3 @@
-def test_var = 'test var'
 pipeline {
   agent {
     node {
