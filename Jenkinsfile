@@ -14,7 +14,7 @@ pipeline {
         ws(dir: 'scm') {
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
           sh '''ls -lah;
-echo "$test_var;"'''
+echo "$test_var";'''
         }
 
       }
