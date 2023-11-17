@@ -14,8 +14,7 @@ pipeline {
           }
 
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
-          sh '''ls -lah;
-echo "${test_var}";'''
+          sh "echo \"${test_var}\";"
         }
 
       }
