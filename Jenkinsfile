@@ -11,7 +11,7 @@ pipeline {
         ws(dir: 'scm') {
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
           sh '''ls -lah;
-print ${workspace}'''
+echo ${workspace}'''
         }
 
       }
