@@ -6,12 +6,13 @@ pipeline {
 
   }
   stages {
-    stage('prepare env') {
+    stage('set up env') {
+      String test_var='test var'
       steps {
         ws(dir: 'scm') {
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
           sh '''ls -lah;
-echo $PWD'''
+echo "$test_var;"'''
         }
 
       }
