@@ -6,12 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('set up env') {
+    stage('run c') {
       steps {
-        ws(dir: 'scm') {
-          sh 'gcc ./main.c'
-        }
-
+        sh 'ls; gcc ./main.c;'
       }
     }
 
