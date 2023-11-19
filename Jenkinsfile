@@ -14,7 +14,7 @@ pipeline {
           }
 
           git(url: 'https://github.com/emlektrik/jenkins_sandbox.git', branch: 'jenkins_sandbox')
-          sh "echo ${test_var}"
+          sh "gcc ./main.c"
         }
 
       }
