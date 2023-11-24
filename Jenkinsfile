@@ -4,9 +4,9 @@ pipeline {
       label 'linux_agents'
     }
   }
-  triggers { 
-    cron('H/5 * * * *') 
-  }
+  // triggers { 
+  //   cron('H/5 * * * *') 
+  // }
   
   stages {
     stage('run c') {
