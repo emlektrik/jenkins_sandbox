@@ -1,5 +1,9 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'linux_agents'
+    }
+  }
   triggers { 
     cron('H */5 * * * *') 
   }
