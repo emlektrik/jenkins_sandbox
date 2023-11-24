@@ -1,10 +1,9 @@
 pipeline {
-  agent {
-    node {
-      label 'linux_agents'
-    }
-
+  agent any
+  triggers { 
+    cron('H */5 * * * *') 
   }
+  
   stages {
     stage('run c') {
       steps {
